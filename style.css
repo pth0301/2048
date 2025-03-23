@@ -1,0 +1,121 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#board{
+    width: 400px;
+    height: 400px;
+
+    background-color: #cdc1b5;
+    border: 6px solid #bbada0; /*The border is drawn outside the width and height of the board -> total size: 412x412*/
+    margin: 0 auto; /*Center the board*/
+    display: flex; /*The board is turned into a flex container*/
+    flex-wrap: wrap;/*The tiles will wrap to the next line when they reach the end of the board - wrap to the next row -> without it, all items would try to fit in one row*/
+}
+.tile{
+    width: 90px;
+    height: 90px;
+    border: 5px solid #bbada0;
+
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;/*align-items + justify-content are 2 properties control the alignment of flex items inside a flex container*/
+    justify-content: center; /*Center the content horizontally: main axis -> horizontal (left to right)*/
+    align-items: center; /*Center the content vertically: cross axis -> vertical (top to bottom)*/
+}
+.page{
+    background-color: #f792ce;
+    margin: auto;
+    padding: 20px; /*Space between content and border*/
+    width: 350px;
+    height: 250px;
+    border-radius: 10px; 
+}
+.page_header{
+    font-weight: bold;
+    font-size: 30px;
+    color: #5b3ce4;
+    margin-bottom: 10px;
+}
+.page_content{
+    padding: 20px;
+    margin-bottom: 2px;
+}
+.form-group{
+    display: flex;
+    align-items: center; /*Center the content vertically*/
+}
+label{   
+    text-align: right;
+    width: 120px;
+    margin-right: 10px;
+}
+input{
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 30px;
+    box-sizing: border-box; /*Prevents excessive resizing*/
+}
+button{
+    padding: 5px;
+    margin-top: 15px;
+    background-color: #6c53db;
+    color: white;
+    border: none;
+    width: 200px;
+    cursor: pointer; /*Change the cursor to a pointer when the user hovers over the button*/
+}
+/*tiles color*/
+.x2{
+    background-color: #eee4da;
+    color: #727371;
+}
+.x4{
+    background-color: #ece0ca;
+    color: #727371;
+}
+.x8{
+    background-color: #f4b17a;
+    color: #727371;
+}
+.x16{
+    background-color: #f59575;
+    color: #727371;
+}
+.x32{
+    background-color: #f57c5f;
+    color: #727371;
+}
+.x64{
+    background-color: #f65d3b;
+    color: #727371;
+}
+.x128{
+    background-color: #edce71;
+    color: #727371;
+}
+.x256{
+    background-color: #edcc63;
+    color: #727371;
+}
+.x512{
+    background-color: #edc651;
+    color: #727371;
+}
+.x1024{
+    background-color: #eec744;
+    color: #727371;
+}
+.x2048{
+    background-color: #ecc230;
+    color: #727371;
+}
+.x4096{
+    background-color: #fe3d3d;
+    color: #727371;
+}
+.x8192{
+    background-color: #ff2020;
+    color: #727371;
+}
