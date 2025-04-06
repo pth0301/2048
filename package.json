@@ -1,0 +1,19 @@
+{
+  "name": "2048-backend",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app"
+  },
+  "dependencies": {
+    "2048-backend": "file:",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.9"
+  }
+}
